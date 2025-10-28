@@ -29,6 +29,7 @@ RUN apk add --no-cache --update \
   ca-certificates \
   tzdata \
   fail2ban \
+  curl \
   bash
 
 COPY --from=builder /app/build/ /app/
