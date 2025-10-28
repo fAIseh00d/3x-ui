@@ -30,6 +30,7 @@ RUN apk add --no-cache --update \
   tzdata \
   fail2ban \
   curl \
+  openssl \
   bash
 
 COPY --from=builder /app/build/ /app/
